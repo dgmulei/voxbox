@@ -54,6 +54,9 @@ jobs:
       
       - name: Unzip artifact for deployment
         run: unzip release.zip
+
+      - name: List files after unzip   # New step added here
+        run: ls -R
       
       # Add a delay here
       - name: Wait for 30 seconds
